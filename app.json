@@ -1,0 +1,44 @@
+{
+  "pages": [
+      "page/home/index",
+      "page/home/make-voice/make-voice",
+      "page/home/video-word/video-word",
+      "page/home/image-word/image-word",
+      "page/home/water-mark/water-mark",
+      "page/mine/index/index",
+      "page/mine/public-number/public-number",
+      "page/mine/commission/commission",
+      "page/mine/online-service/online-service",
+      "page/mine/about-us/about-us"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "热抖",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "page/home/index",
+      "iconPath": "image/wechat.png",
+      "selectedIconPath": "image/wechatHL.png",
+      "text": "主页"
+    }, {
+      "pagePath": "page/mine/index/index",
+      "iconPath": "image/wechat.png",
+      "selectedIconPath": "image/wechatHL.png",
+      "text": "我的"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
