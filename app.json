@@ -1,11 +1,11 @@
 {
   "pages": [
-      "page/home/index",
+      "page/home/index/index",
       "page/home/make-voice/make-voice",
       "page/home/video-word/video-word",
       "page/home/image-word/image-word",
       "page/home/water-mark/water-mark",
-      "page/mine/index/index",
+      "page/mine/index",
       "page/mine/public-number/public-number",
       "page/mine/commission/commission",
       "page/mine/online-service/online-service",
@@ -23,12 +23,12 @@
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [{
-      "pagePath": "page/home/index",
+      "pagePath": "page/home/index/index",
       "iconPath": "image/wechat.png",
       "selectedIconPath": "image/wechatHL.png",
       "text": "主页"
     }, {
-      "pagePath": "page/mine/index/index",
+      "pagePath": "page/mine/index",
       "iconPath": "image/wechat.png",
       "selectedIconPath": "image/wechatHL.png",
       "text": "我的"

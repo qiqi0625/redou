@@ -1,0 +1,29 @@
+<view class="index" style="width: 750rpx; height: 608rpx; display: block; box-sizing: content-box">
+  <view class="head" style="width: 750rpx; height: 240rpx; display: block; box-sizing: border-box">
+    <image style="position: relative; width: 128rpx; height: 128rpx; display: inline-block; box-sizing: border-box; left: 221rpx; top: -73rpx" src="/image/icon.png" />
+    <text style="position: relative; left: -57rpx; top: -19rpx; font-size: 32rpx">热抖，为您的短视频保驾护航！</text>
+    </view>
+  <view class="body">
+  </view>
+
+
+
+
+
+  <view style="position:relative; width: 100%; background: #d3d3d3; height: 100px">
+    <button style="width: 750rpx; height: 97rpx; display: block; box-sizing: border-box; left: 0rpx; top: 20rpx; position: relative">制作配音</button>
+  
+    <button style="width: 750rpx; height: 97rpx; display: block; box-sizing: border-box; left: 0rpx; top: 31rpx; position: relative">邀请好友(赚佣金)</button>
+    </view>
+
+  <view style="position: relative; width: 750rpx; background: #d3d3d3; height: 593rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+    <button style="position: relative; left: -263rpx; top: 22rpx; width: 523rpx; height: 158rpx; display: block; box-sizing: border-box">提取文案</button>
+<button style="position: relative; left: 187rpx; top: -136rpx; width: 375rpx; height: 158rpx; display: block; box-sizing: border-box">图片转文字</button>
+
+    </view>
+
+
+
+
+
+  </view>

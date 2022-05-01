@@ -1,66 +1,37 @@
-// page/mine/index.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    menuList: [
+    {
+      name: '我的佣金',
+      opened: false, 
+      url: './commission/commission'
+    },
+    {
+      name: '关注公众号',
+      opened: false, 
+      url: './public-number/public-number'
+    },
+    {
+      name: '在线客服',
+      opened: false, 
+      url: './online-service/online-service'
+    },
+    {
+      name: '关于我们',
+      opened: false, 
+      url: './about-us/about-us'
+    }]
   },
+  tapMenuItem: function (e) {
+    var menuItem = this.data.menuList[parseInt(e.currentTarget.id)] 
+    if (menuItem.url) {
+      wx.navigateTo({ url: menuItem.url })
+    } else {
+      var changeData = {}
+      var opened = menuItem.opened
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+      changeData['menuList[' + e.currentTarget.id + '].opened'] = !opened
+      this.setData(changeData)
+    }
   }
 })
