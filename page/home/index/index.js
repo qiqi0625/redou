@@ -10,18 +10,32 @@ Page({
   login: function () {
     console.log("[home] login call")
     var that = this
-    wx.login({
-      success: function (res) {
-        console.log('[home] login success, code:' + res.code)
-        
-
+    
+    wx.checkSession({
+      success: (res) => {
+        wx.request({
+          url: 'http://192.168.0.103:7788/wx/login',
+              data: {
+                code: res.code
+              }
+        })
       },
-      timeout: function (res) {
-        console.log('[home] login timeout')
-      },
-      fail: function (res) {
-        console.log('[home] login fail')
+      fail: (res) => {
+        // session 失效
+        wx.login({
+          timeout: 120,
+          success: (res) => {
+            wx.request({
+              url: 'http://192.168.0.103:7788/wx/login',
+              data: {
+                code: res.code
+              }
+            })
+          }
+        })
       }
     })
+
+
   }
 });
